@@ -4,7 +4,6 @@ let BlockChainSchema = new schema({
     index:{
     required: true,
     type: Schema.Types.Number
-
     },
     timestamp:{
         required: true,
@@ -18,12 +17,10 @@ let BlockChainSchema = new schema({
     prevHash: {
         required: false,
         type: Schema.Types.String
-
     },
     hash: {
         required: true,
         type: Schema.Types.String
-
     }
 });
 module.exports = mongoose.module("BlockChain" , BlockChainSchema);
