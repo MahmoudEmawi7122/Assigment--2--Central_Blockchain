@@ -23,7 +23,7 @@ class BlockChain{
             block.hash = hash(block);
             let newBlock = new blockChainModel(this.block);
             newBlock.save( (errorMasg) =>{
-                if(err) return console.log(chalk.red("Invalid can't save in Database" , errorMasg.message));
+                if(errorMasg) return console.log(chalk.red("Invalid can't save in Database" , errorMasg.message));
                 console.log(chalk.green("The block is saved"));
             })
         }
