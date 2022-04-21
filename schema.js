@@ -25,7 +25,5 @@ let BlockChainSchema = new schema({
         type: Schema.Types.String
 
     }
-
-      });
-
+});
 module.exports = mongoose.module("BlockChain" , BlockChainSchema);
