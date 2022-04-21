@@ -5,9 +5,7 @@ mongoose.connect("mongodb://localhost:3000/BlockChain", (err) =>{
     console.log("Database is connected");
     connectionCallback();
 });
-let connectionCallback = () =>{
-
-};
+let connectionCallback = () =>{};
 module.exports.onConnect = (callback) =>{
     connectionCallback = callback;
 }
